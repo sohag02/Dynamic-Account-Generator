@@ -193,7 +193,7 @@ def stats(update, context):
             a = len(l)
             update.message.reply_text("ZEE5 STATS\n\nAccounts Remainning : {a}".format(a=a))
         elif context.args[0] == "nord":
-            file = open(f"hits\\{s}.txt", "r")
+            file = open(f"hits\\nordvpn.txt", "r")
             l = file.readlines()
             a = len(l)
             update.message.reply_text("NORD VPN STATS\n\nAccounts Remainning : {a}".format(a=a))
