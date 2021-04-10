@@ -1,0 +1,2 @@
+pyrate_limiter == 2.3.0
+python_telegram_bot == 13.1
