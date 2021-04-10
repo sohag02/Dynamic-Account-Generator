@@ -13,7 +13,7 @@ from telegram.ext.dispatcher import DispatcherHandlerStop
 
 
 TOKEN = "1692696716:AAEiNle1ZjBkOLiJKbjuJqYxD5QyNAxbG80"
-PORT = int(os.environ('PORT', 17995))
+PORT = int(os.environ.get('PORT', 17995))
 #PORT = 8443
 
 channel = -1001206083299
