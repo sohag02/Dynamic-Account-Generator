@@ -742,6 +742,7 @@ dispatcher.add_handler(CommandHandler("user_stats", user_stats, Filters.user(use
 dispatcher.add_handler(CommandHandler(["stats", "upload", "admin", "broadcast"], non_admin, ~Filters.user(username=admins)), group=1)
 dispatcher.add_handler(MessageHandler(Filters.all & (~ Filters.caption_entity("bot_command")), message), group=1)
 
-updater.start_webhook(listen="0.0.0.0", port=PORT, url_path=TOKEN)
-updater.bot.set_webhook("https://dynamic-account-generator.herokuapp.com/")
+"""updater.start_webhook(listen="0.0.0.0", port=PORT, url_path=TOKEN)
+updater.bot.set_webhook("https://dynamic-account-generator.herokuapp.com/")"""
+updater.start_polling()
 updater.idle()
